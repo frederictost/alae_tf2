@@ -2,10 +2,10 @@
   Adversarial Latent Autoencoders, ALAE with TF2
   <br>
 </h1>
-  <p align="center">
+  <p>
     <a href="https://tostcorp.com/">Frédéric TOST</a>    
   </p>
-<h4 align="center">MNIST dataset, ConvNet implementation with Tensorflow 2</h4>
+<h4>MNIST dataset, ConvNet implementation with Tensorflow 2</h4>
 
 Generated images
 
@@ -21,7 +21,7 @@ See reference below:
 * Stanislav Pidhorskyi, Donald A. Adjeroh, and Gianfranco Doretto. Adversarial Latent Autoencoders. In *Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR)*, 2020. [to appear] 
 >
 
-<h5 align="center">preprint on arXiv: <a href="https://arxiv.org/abs/2004.04467">2004.04467</a></h5>
+<h5>preprint on arXiv: <a href="https://arxiv.org/abs/2004.04467">2004.04467</a></h5>
 
 **MNIST** dataset is used as a toy example. The **Generator** and **E encoder** are using **Conv2D** and **Conv2DTranspose** instead of a **MLP** (Multi-Layer Perceptron used in the paper). 
 This gives better results but  a longer training.
