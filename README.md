@@ -3,14 +3,14 @@
   <br>
 </h1>
   <p>
-    <a href="https://tostcorp.com/">Frédéric TOST</a>    
+    Frédéric TOST    
   </p>
 <h4>MNIST dataset, ConvNet implementation with Tensorflow 2</h4>
 
 Generated images
 
 ![](static/alae_samples_40300_redim.png)&nbsp;&nbsp;&nbsp;
-![](static/alae_samples_41400_redim.png)
+![](static/alae_static_samples_reconst.gif)
 
 # ALAE
 
@@ -28,9 +28,27 @@ This gives better results but  a longer training.
 
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/hparams.svg?style=flat-square)
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+
 ## Objective
 
-Show how to easily implement the ALAE with the MNIST dataset and Convolutional Networks. Finding the hyperparameters such as learning rate of each optimizer is the most fastidious task.
+The objective is to show how to easily implement the ALAE using the **MNIST** dataset and convolutional networks. Finding the hyperparameters such as learning rate of each optimizer is the most fastidious task. 
+ 
+Additional features
+- The use of Tensorflow 2.0 **HParams Dashboard** features allows to keep a trace of each run using different hyperparameters.
+
+![](static/hparam_table_view.png) 
+
+
+- 3 losses time history 
+
+| Loss | Time history
+| :--- | :----------
+| Generator | ![](static/loss_generator.png) 
+| Discriminator | ![](static/loss_discriminator.png)
+| Latent | ![](static/loss_latent.png) 
+
+- the latent loss was splitted into **Reconstruction** loss and **Kullback Leibler (KL)** loss. 
+KL loss is not used in the original paper, it seems to accelerate the convergence of the Generator/Discriminator.
 
 ## To run the demo
 
@@ -50,3 +68,7 @@ Run the demo
 | alae_tf2_helper.py | Train the neural network. alae_helper is the class that define the losses and the train step function.
 | alae_tf2_models.py | Models used in the demo, Encoders F & E, Generator and Discriminator (4 classes).
 | utils.py | Useful functions to process and plot images (2 functions).
+
+## Authors
+
+- Frédéric TOST — Developer [TOST Corp.](https://tostcorp.com/)
