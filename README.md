@@ -50,6 +50,9 @@ Additional features
 - the latent loss was splitted into **Reconstruction** loss and **Kullback Leibler (KL)** loss. 
 KL loss is not used in the original paper, it seems to accelerate the convergence of the Generator/Discriminator.
 
+    
+    K_RECONST_KL = 1.0 # To use full reconstruction (alae_tf2.py)
+
 ## To run the demo
 
 To run the demo, you will need to have installed Tensorflow 2.0.0 or more recent (2.1.0, 2.2.0). 
