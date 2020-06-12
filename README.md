@@ -1,4 +1,4 @@
-<h1 align="center">
+<h1>
   Adversarial Latent Autoencoders, ALAE with TF2
   <br>
 </h1>
@@ -26,6 +26,8 @@ See reference below:
 **MNIST** dataset is used as a toy example. The **Generator** and **E encoder** are using **Conv2D** and **Conv2DTranspose** instead of a **MLP** (Multi-Layer Perceptron used in the paper). 
 This gives better results but  a longer training.
 
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/hparams.svg?style=flat-square)
+[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 ## Objective
 
 Show how to easily implement the ALAE with the MNIST dataset and Convolutional Networks. Finding the hyperparameters such as learning rate of each optimizer is the most fastidious task.
